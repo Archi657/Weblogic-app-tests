@@ -1,0 +1,61 @@
+Sending messages for Tests....
+Tests file from: src/resources/tests.xml
+___________________ Test [1/2] ___________________________________
+Test Name: Test 1
+Test Description: Description Test 1
+Test Order ID Example: OrderIdOriginal
+Test Creation File: test1_order.xml
+Test Order ID: OrderId_2024_May_01_12_57_11
+SOM Name: SOM 1
+------------------- Sending messages for SOM 1-------------------
+The queue is queuename
+Interaction #0
+Interaction Name: Interaction 1
+Interaction File: test1_som1_interaction1.xml
+call function of send message()...
+Interaction #1
+Interaction Name: Interaction 2
+Interaction File: test1_som1_interaction2.xml
+call function of send message()...
+SOM Name: SOM 2
+------------------- Sending messages for SOM 2-------------------
+The queue is queuename
+Interaction #0
+Interaction Name: Interaction 2
+Interaction File: test1_som2_interaction1.xml
+call function of send message()...
+Interaction #1
+Interaction Name: Interaction 2
+Interaction File: test1_som2_interaction2.xml
+call function of send message()...
+___________________ Test [1/2] Finished __________________________
+___________________ Test [2/2] ___________________________________
+Test Name: Test 2
+Test Description: Description Test 2
+Test Order ID Example: OrderIdOriginal
+Test Creation File: test2_order.xml
+Test Order ID: OrderId_2024_May_01_12_57_11
+SOM Name: SOM 2
+------------------- Sending messages for SOM 2-------------------
+The queue is queuename som 2
+Interaction #0
+Interaction Name: Interaction 2
+Interaction File: test2_som1_interaction1.xml
+call function of send message()...
+Interaction #1
+Interaction Name: Interaction 2
+Interaction File: test2_som1_interaction2.xml
+call function of send message()...
+SOM Name: SOM 2
+------------------- Sending messages for SOM 2-------------------
+The queue is queuename
+Interaction #0
+Interaction Name: Interaction 2
+Interaction File: test2_som2_interaction1.xml
+call function of send message()...
+Interaction #1
+Interaction Name: Interaction 2
+Interaction File: test2_som2_interaction2.xml
+call function of send message()...
+___________________ Test [2/2] Finished __________________________
+comparing results

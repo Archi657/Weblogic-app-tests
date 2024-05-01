@@ -2,7 +2,8 @@
     <testcase>
         <name>Test 1</name>
         <description>Description Test 1</description>
-        <orderId>Order Id Similar order</orderId>
+        <orderIdExample>OrderIdOriginal</orderIdExample>
+        <orderIdTest>OrderId</orderIdTest>
         <testOrder>test1_order.xml</testOrder>
         <createOrder>test1_osm_cpq.xml</createOrder>
         <soms>
@@ -31,6 +32,44 @@
                     <interaction>
                         <name>Interaction 2</name>
                         <message>test1_som2_interaction2.xml</message>
+                    </interaction>
+                </interactions>
+            </som>
+        </soms>
+    </testcase>
+    <testcase>
+        <name>Test 2</name>
+        <description>Description Test 2</description>
+        <orderIdExample>OrderIdOriginal</orderIdExample>
+        <orderIdTest>OrderId</orderIdTest>
+        <testOrder>test2_order.xml</testOrder>
+        <createOrder>test2_osm_cpq.xml</createOrder>
+        <soms>
+            <som>
+                <name>SOM 2</name>
+                <queue>queuename som 2</queue>
+                <interactions>
+                    <interaction>
+                        <name>Interaction 2</name>
+                        <message>test2_som1_interaction1.xml</message>
+                    </interaction>
+                    <interaction>
+                        <name>Interaction 2</name>
+                        <message>test2_som1_interaction2.xml</message>
+                    </interaction>
+                </interactions>
+            </som>
+            <som>
+                <name>SOM 2</name>
+                <queue>queuename</queue>
+                <interactions>
+                    <interaction>
+                        <name>Interaction 2</name>
+                        <message>test2_som2_interaction1.xml</message>
+                    </interaction>
+                    <interaction>
+                        <name>Interaction 2</name>
+                        <message>test2_som2_interaction2.xml</message>
                     </interaction>
                 </interactions>
             </som>

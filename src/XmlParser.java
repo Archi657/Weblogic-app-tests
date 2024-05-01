@@ -21,8 +21,12 @@ public class XmlParser {
         return getTagValue(testCase, "description");
     }
 
-    public String getTestOrderId(Element testCase) {
-        return getTagValue(testCase, "orderId");
+    public String getTestOrderIdExample(Element testCase) {
+        return getTagValue(testCase, "orderIdExample");
+    }
+
+    public String getTestOrderIdTest(Element testCase) {
+        return getTagValue(testCase, "orderIdTest");
     }
 
     public String getTestCreationFile(Element testCase) {
@@ -35,6 +39,10 @@ public class XmlParser {
 
     public String getSomName(Element som) {
         return getTagValue(som, "name");
+    }
+
+    public String getSomQueue(Element som) {
+        return getTagValue(som, "queue");
     }
 
     public NodeList getSomInteractions(Element som) {

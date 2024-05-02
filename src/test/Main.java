@@ -1,5 +1,4 @@
-import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
+package test;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,7 +8,7 @@ public class Main {
         TestOrchestrationOSM.excecuteTest(); // execute
 
         // you could add a new file
-        // and call a new function of TestOrchestrationOSM similar to executeTest() if the logic is different
+        // and call a new function of test.TestOrchestrationOSM similar to executeTest() if the logic is different
 
     }
 }

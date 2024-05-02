@@ -1,11 +1,29 @@
 <tests>
+    <connections>
+        <connection>
+            <name>Server 1 dev</name>
+            <weblogic_jms_url>weblogic_jms_url</weblogic_jms_url>
+            <weblogic_jndi_factory_name>weblogic_jndi_factory_name</weblogic_jndi_factory_name>
+            <connection_factory_jndi_name>connection_factory_jndi_name</connection_factory_jndi_name>
+            <user>user</user>
+            <password>password</password>
+        </connection>
+        <connection>
+            <name>Server 2 dev</name>
+            <weblogic_jms_url>weblogic_jms_url</weblogic_jms_url>
+            <weblogic_jndi_factory_name>weblogic_jndi_factory_name</weblogic_jndi_factory_name>
+            <connection_factory_jndi_name>connection_factory_jndi_name</connection_factory_jndi_name>
+            <user>user</user>
+            <password>password</password>
+        </connection>
+    </connections>
     <testcase>
-        <name>Test 1</name>
+        <name>Test_1</name>
         <description>Description Test 1</description>
         <orderIdExample>OrderIdOriginal</orderIdExample>
         <orderIdTest>OrderId</orderIdTest>
-        <testOrder>test1_order.xml</testOrder>
-        <createOrder>test1_osm_cpq.xml</createOrder>
+        <createOrderQueue>test1_osm_cpq.xml</createOrderQueue>
+        <createOrderFile>test1_osm_cpq.xml</createOrderFile>
         <soms>
             <som>
                 <name>SOM 1</name>
@@ -38,12 +56,12 @@
         </soms>
     </testcase>
     <testcase>
-        <name>Test 2</name>
+        <name>Test_2</name>
         <description>Description Test 2</description>
         <orderIdExample>OrderIdOriginal</orderIdExample>
         <orderIdTest>OrderId</orderIdTest>
-        <testOrder>test2_order.xml</testOrder>
-        <createOrder>test2_osm_cpq.xml</createOrder>
+        <createOrderQueue>test2_osm_cpq.xml</createOrderQueue>
+        <createOrderFile>test2_osm_cpq.xml</createOrderFile>
         <soms>
             <som>
                 <name>SOM 2</name>

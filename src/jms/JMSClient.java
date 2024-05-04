@@ -1,6 +1,7 @@
 package jms;
 
 import java.util.Hashtable;
+import java.util.UUID;
 import javax.naming.*; 
 import javax.jms.*;
 
@@ -29,7 +30,7 @@ import javax.jms.*;
 			 String user,
 			 String password,
 			 String queue
-			 ) {
+			 ) throws JMSException {
 		 String QCF_NAME = connection_factory_jndi_name;
 		 String QUEUE_NAME = queue;
 		 // create InitialContext       
@@ -96,8 +97,19 @@ import javax.jms.*;
 		 }        catch (JMSException jmse) {         
 			 jmse.printStackTrace(System.err);      
 			 System.exit(0);        }       
-		 System.out.println("Set text in TextMessage " + message.toString());    
-		 
+		 System.out.println("Set text in TextMessage " + message.toString());
+
+		 // add correlation id
+
+		 try {            message.setJMSCorrelationID(UUID.randomUUID().toString());
+		 }        catch (JMSException jmse) {
+			 jmse.printStackTrace(System.err);
+			 System.exit(0);        }
+		 System.out.println("Set text in TextMessage " + message.toString());
+
+		 // set message properties to be able to be sended
+		 message.setStringProperty("_wls_mimehdrContent_Type", "text/xml; charset=UTF-8");
+		 message.setStringProperty("URI","/osm/wsapi");
 		 // send message        
 		 try {            qsndr.send(message);      
 		 }        catch (JMSException jmse) {         
